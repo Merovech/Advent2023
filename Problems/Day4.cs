@@ -1,6 +1,4 @@
-﻿using System.Reflection.PortableExecutable;
-
-namespace AdventOfCode2023.Problems
+﻿namespace AdventOfCode2023.Problems
 {
 	internal class Day4 : DayBase<double>
 	{
@@ -37,15 +35,10 @@ namespace AdventOfCode2023.Problems
 			foreach (var kvp in cardCounts)
 			{
 				var cardCount = kvp.Value;
-				while (cardCount > 0)
+				var wins = winCounts[kvp.Key - 1];
+				for (int i = 0; i < wins; i++)
 				{
-					var wins = winCounts[kvp.Key - 1];
-					for (int i = 0; i < wins; i++)
-					{
-						cardCounts[kvp.Key + 1 + i]++;
-					}
-
-					cardCount--;
+					cardCounts[kvp.Key + 1 + i] += cardCount;
 				}
 			}
 
