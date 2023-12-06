@@ -6,15 +6,17 @@ This repo does **not** contain input files, nor does it provide output answers. 
 
 To run this repo, you must create the following folder structure in the solition:
 
-> [Root]
->   + InputFiles
->   |---+ ProblemData
->	|---|---- day1.txt
->	|---|---- day2.txt
->	|---|---- day3.txt
->	|---|---- (etc)
->	|---+ SampleData
->	|---|---- day1.txt
->	|---|---- day2.txt
->	|---|---- day3.txt
->	|---|---- (etc)
+``` txt
+[Root]  
+    + InputFiles  
+    |---+ ProblemData  
+    |---|---- day1.txt  
+    |---|---- day2.txt  
+    |---|---- day3.txt  
+    |---|---- (etc)  
+    |---+ SampleData  
+    |---|---- day1.txt  
+    |---|---- day2.txt  
+    |---|---- day3.txt  
+    |---|---- (etc)  
+```
